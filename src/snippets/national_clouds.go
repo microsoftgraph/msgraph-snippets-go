@@ -18,15 +18,16 @@ func NewGraphClientForUsGov() *graph.GraphServiceClient {
 	// <NationalCloudSnippet>
 	// Create the InteractiveBrowserCredential using details
 	// from app registered in the Azure AD for US Government portal
-	credential, _ := azidentity.NewInteractiveBrowserCredential(&azidentity.InteractiveBrowserCredentialOptions{
-		ClientID: "YOUR_CLIENT_ID",
-		TenantID: "YOUR_TENANT_ID",
-		ClientOptions: policy.ClientOptions{
-			// https://login.microsoftonline.us
-			Cloud: cloud.AzureGovernment,
-		},
-		RedirectURL: "YOUR_REDIRECT_URL",
-	})
+	credential, _ := azidentity.NewInteractiveBrowserCredential(
+		&azidentity.InteractiveBrowserCredentialOptions{
+			ClientID: "YOUR_CLIENT_ID",
+			TenantID: "YOUR_TENANT_ID",
+			ClientOptions: policy.ClientOptions{
+				// https://login.microsoftonline.us
+				Cloud: cloud.AzureGovernment,
+			},
+			RedirectURL: "YOUR_REDIRECT_URL",
+		})
 
 	// Create the authentication provider
 	authProvider, _ := auth.NewAzureIdentityAuthenticationProviderWithScopes(credential,

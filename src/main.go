@@ -45,6 +45,7 @@ func main() {
 		fmt.Println("0. Exit")
 		fmt.Println("1. Run batch samples")
 		fmt.Println("2. Run request samples")
+		fmt.Println("3. Run paging samples")
 
 		_, err = fmt.Scanf("%d", &choice)
 		if err != nil {
@@ -59,6 +60,8 @@ func main() {
 			snippets.RunBatchSamples(userClient)
 		case 2:
 			snippets.RunRequestSamples(userClient)
+		case 3:
+			snippets.RunPagingSamples(userClient)
 		default:
 			fmt.Println("Invalid choice! Please try again.")
 		}
