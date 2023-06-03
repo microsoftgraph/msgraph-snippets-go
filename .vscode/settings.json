@@ -1,12 +1,16 @@
 {
     "cSpell.words": [
+        "Calendarable",
         "Eventable",
+        "Giphy",
+        "GIPHYRATINGTYPE",
         "godotenv",
         "graphcore",
         "graphdebug",
         "graphhelper",
         "joho",
         "khttp",
+        "Messageable",
         "Middlewares",
         "msrc",
         "Responseable",

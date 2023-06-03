@@ -44,6 +44,7 @@ func main() {
 		fmt.Println("Please choose one of the following options:")
 		fmt.Println("0. Exit")
 		fmt.Println("1. Run batch samples")
+		fmt.Println("2. Run request samples")
 
 		_, err = fmt.Scanf("%d", &choice)
 		if err != nil {
@@ -55,8 +56,9 @@ func main() {
 			// Exit the program
 			fmt.Println("Goodbye...")
 		case 1:
-			// Display access token
 			snippets.RunBatchSamples(userClient)
+		case 2:
+			snippets.RunRequestSamples(userClient)
 		default:
 			fmt.Println("Invalid choice! Please try again.")
 		}
