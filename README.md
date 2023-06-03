@@ -1,6 +1,6 @@
-# Microsoft Graph .NET SDK Snippets
+# Microsoft Graph Go SDK Snippets
 
-![License.](https://img.shields.io/badge/license-MIT-green.svg)
+[![Go](https://github.com/microsoftgraph/msgraph-snippets-go/actions/workflows/go.yml/badge.svg)](https://github.com/microsoftgraph/msgraph-snippets-go/actions/workflows/go.yml) ![License.](https://img.shields.io/badge/license-MIT-green.svg)
 
 This repository contains sample snippets for the [Microsoft Graph Go SDK](https://github.com/microsoftgraph/msgraph-sdk-go). These snippets are referenced in the [Microsoft Graph SDK documentation](https://learn.microsoft.com/graph/sdks/sdks-overview).
 
