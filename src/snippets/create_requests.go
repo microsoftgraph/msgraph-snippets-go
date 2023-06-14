@@ -178,7 +178,7 @@ func MakeUpdateRequest(graphClient *graph.GraphServiceClient, teamId string) {
 
 func MakeHeadersRequest(graphClient *graph.GraphServiceClient) models.EventCollectionResponseable {
 	// <HeadersRequestSnippet>
-	//  GET https://graph.microsoft.com/v1.0/me/events
+	// GET https://graph.microsoft.com/v1.0/me/events
 
 	// import abstractions "github.com/microsoft/kiota-abstractions-go"
 	headers := abstractions.NewRequestHeaders()
@@ -198,10 +198,10 @@ func MakeHeadersRequest(graphClient *graph.GraphServiceClient) models.EventColle
 func MakeQueryParametersRequest(graphClient *graph.GraphServiceClient) models.EventCollectionResponseable {
 	// <QueryParametersRequestSnippet>
 	// GET https://graph.microsoft.com/v1.0/me/calendarView?
-	// startDateTime=2020-12-01T00:00:00Z&endDateTime=2020-12-30T00:00:00Z
+	// startDateTime=2023-06-14T00:00:00Z&endDateTime=2023-06-15T00:00:00Z
 
-	startDateTime := "2020-12-01T00:00:00"
-	endDateTime := "2020-12-30T00:00:00Z"
+	startDateTime := "2023-06-14T00:00:00"
+	endDateTime := "2023-06-15T00:00:00Z"
 
 	// import github.com/microsoftgraph/msgraph-sdk-go/users
 	query := users.ItemCalendarViewRequestBuilderGetQueryParameters{
