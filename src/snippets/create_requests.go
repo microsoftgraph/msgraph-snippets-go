@@ -83,7 +83,7 @@ func MakeSelectRequest(graphClient *graph.GraphServiceClient) models.Userable {
 func MakeListRequest(graphClient *graph.GraphServiceClient) models.MessageCollectionResponseable {
 	// <ListRequestSnippet>
 	// GET https://graph.microsoft.com/v1.0/me/messages?
-	// $select=subject,sender&$filter=subject eq 'Hello world'&$orderBy=receivedDateTime
+	// $select=subject,sender&$filter=subject eq 'Hello world'
 
 	// import github.com/microsoftgraph/msgraph-sdk-go/users
 	filterValue := "subject eq 'Hello world'"
