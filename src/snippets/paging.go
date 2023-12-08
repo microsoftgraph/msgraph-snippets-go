@@ -134,3 +134,39 @@ func IterateAllMessagesWithPause(graphClient *graph.GraphServiceClient) {
 	}
 	// </ResumePagingSnippet>
 }
+
+func ManuallyPageAllMessages(graphClient *graph.GraphBaseServiceClient) {
+	// <ManualPagingSnippet>
+	var pageSize int32 = 10
+	query := users.ItemMessagesRequestBuilderGetQueryParameters{
+		Top: &pageSize,
+	}
+
+	options := users.ItemMessagesRequestBuilderGetRequestConfiguration{
+		QueryParameters: &query,
+	}
+
+	result, err := graphClient.Me().Messages().Get(context.Background(), &options)
+	if err != nil {
+		log.Fatalf("Error getting messages: %v\n", err)
+	}
+
+	for {
+		for _, message := range result.GetValue() {
+			fmt.Printf("%s\n", *message.GetSubject())
+		}
+
+		nextPageUrl := result.GetOdataNextLink()
+		if nextPageUrl != nil {
+			result, err = graphClient.Me().Messages().
+				WithUrl(*nextPageUrl).
+				Get(context.Background(), nil)
+			if err != nil {
+				log.Fatalf("Error getting messages: %v\n", err)
+			}
+		} else {
+			break
+		}
+	}
+	// </ManualPagingSnippet>
+}
