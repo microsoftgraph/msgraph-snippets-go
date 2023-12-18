@@ -3,14 +3,14 @@ module sdksnippets
 go 1.20
 
 require (
-	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.9.0
+	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.9.1
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.4.0
 	github.com/jasonjoh/msgraph-sdk-go-debug-logger v0.0.1
 	github.com/joho/godotenv v1.5.1
 	github.com/microsoft/kiota-abstractions-go v1.5.3
 	github.com/microsoft/kiota-authentication-azure-go v1.0.1
 	github.com/microsoft/kiota-http-go v1.1.1
-	github.com/microsoftgraph/msgraph-sdk-go v1.26.0
+	github.com/microsoftgraph/msgraph-sdk-go v1.27.0
 	github.com/microsoftgraph/msgraph-sdk-go-core v1.0.1
 	github.com/thlib/go-timezone-local v0.0.0-20210907160436-ef149e42d28e
 )
