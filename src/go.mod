@@ -10,7 +10,7 @@ require (
 	github.com/microsoft/kiota-abstractions-go v1.5.3
 	github.com/microsoft/kiota-authentication-azure-go v1.0.1
 	github.com/microsoft/kiota-http-go v1.1.1
-	github.com/microsoftgraph/msgraph-sdk-go v1.27.0
+	github.com/microsoftgraph/msgraph-sdk-go v1.28.0
 	github.com/microsoftgraph/msgraph-sdk-go-core v1.0.1
 	github.com/thlib/go-timezone-local v0.0.0-20210907160436-ef149e42d28e
 )
@@ -23,7 +23,7 @@ require (
 	github.com/go-logr/logr v1.3.0 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/golang-jwt/jwt/v5 v5.2.0 // indirect
-	github.com/google/uuid v1.4.0 // indirect
+	github.com/google/uuid v1.5.0 // indirect
 	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/microsoft/kiota-serialization-form-go v1.0.0 // indirect
 	github.com/microsoft/kiota-serialization-json-go v1.0.4 // indirect
