@@ -45,8 +45,8 @@ github.com/microsoft/kiota-serialization-text-go v1.0.0 h1:XOaRhAXy+g8ZVpcq7x7a0
 github.com/microsoft/kiota-serialization-text-go v1.0.0/go.mod h1:sM1/C6ecnQ7IquQOGUrUldaO5wj+9+v7G2W3sQ3fy6M=
 github.com/microsoftgraph/msgraph-sdk-go v1.32.0 h1:nWhgHiCYAuctf9j/2S84um23tU1fAg+jBoAF5QefoxE=
 github.com/microsoftgraph/msgraph-sdk-go v1.32.0/go.mod h1:YDj5bLJkl2kMu50iwG5b3PKGmkUsF26Wto5heVGVfNQ=
-github.com/microsoftgraph/msgraph-sdk-go-core v1.0.1 h1:uq4qZD8VXLiNZY0t4NoRpLDoEiNYJvAQK3hc0ZMmdxs=
-github.com/microsoftgraph/msgraph-sdk-go-core v1.0.1/go.mod h1:HUITyuFN556+0QZ/IVfH5K4FyJM7kllV6ExKi2ImKhE=
+github.com/microsoftgraph/msgraph-sdk-go-core v1.0.2 h1:GsZ2bUe+aMdPo9B6ivm0T9vlU9s4ufTScu+GqZnYNNw=
+github.com/microsoftgraph/msgraph-sdk-go-core v1.0.2/go.mod h1:3c/v/N/iuH8UWDf4r4Z9FBiSyGeNZ54BHe2y+9Ccxtc=
 github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c h1:+mdjkGKdHQG3305AYmdv1U2eRNDiU2ErMBj1gwrq8eQ=
 github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c/go.mod h1:7rwL4CYBLnjLxUqIJNnCWiEdr3bn6IUYi15bNlnbCCU=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
