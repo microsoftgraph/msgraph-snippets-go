@@ -11,7 +11,7 @@ require (
 	github.com/microsoft/kiota-authentication-azure-go v1.0.2
 	github.com/microsoft/kiota-http-go v1.3.0
 	github.com/microsoftgraph/msgraph-sdk-go v1.32.0
-	github.com/microsoftgraph/msgraph-sdk-go-core v1.0.1
+	github.com/microsoftgraph/msgraph-sdk-go-core v1.0.2
 	github.com/thlib/go-timezone-local v0.0.0-20210907160436-ef149e42d28e
 )
 
