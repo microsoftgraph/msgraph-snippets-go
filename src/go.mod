@@ -10,7 +10,7 @@ require (
 	github.com/microsoft/kiota-abstractions-go v1.5.6
 	github.com/microsoft/kiota-authentication-azure-go v1.0.2
 	github.com/microsoft/kiota-http-go v1.3.2
-	github.com/microsoftgraph/msgraph-sdk-go v1.34.0
+	github.com/microsoftgraph/msgraph-sdk-go v1.35.0
 	github.com/microsoftgraph/msgraph-sdk-go-core v1.1.0
 	github.com/thlib/go-timezone-local v0.0.0-20210907160436-ef149e42d28e
 )
