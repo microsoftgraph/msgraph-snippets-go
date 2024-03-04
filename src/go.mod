@@ -3,7 +3,7 @@ module sdksnippets
 go 1.20
 
 require (
-	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.9.2
+	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.10.0
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.5.1
 	github.com/jasonjoh/msgraph-sdk-go-debug-logger v0.0.1
 	github.com/joho/godotenv v1.5.1
