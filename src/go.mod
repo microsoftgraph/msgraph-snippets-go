@@ -9,7 +9,7 @@ require (
 	github.com/joho/godotenv v1.5.1
 	github.com/microsoft/kiota-abstractions-go v1.5.6
 	github.com/microsoft/kiota-authentication-azure-go v1.0.2
-	github.com/microsoft/kiota-http-go v1.3.1
+	github.com/microsoft/kiota-http-go v1.3.2
 	github.com/microsoftgraph/msgraph-sdk-go v1.34.0
 	github.com/microsoftgraph/msgraph-sdk-go-core v1.0.2
 	github.com/thlib/go-timezone-local v0.0.0-20210907160436-ef149e42d28e
@@ -33,9 +33,9 @@ require (
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/std-uritemplate/std-uritemplate/go v0.0.53 // indirect
 	github.com/stretchr/testify v1.8.4 // indirect
-	go.opentelemetry.io/otel v1.23.1 // indirect
-	go.opentelemetry.io/otel/metric v1.23.1 // indirect
-	go.opentelemetry.io/otel/trace v1.23.1 // indirect
+	go.opentelemetry.io/otel v1.24.0 // indirect
+	go.opentelemetry.io/otel/metric v1.24.0 // indirect
+	go.opentelemetry.io/otel/trace v1.24.0 // indirect
 	golang.org/x/crypto v0.19.0 // indirect
 	golang.org/x/net v0.21.0 // indirect
 	golang.org/x/sys v0.17.0 // indirect
