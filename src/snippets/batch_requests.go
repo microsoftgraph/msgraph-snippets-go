@@ -38,7 +38,7 @@ func SimpleBatch(graphClient *graph.GraphServiceClient) {
 	viewStart := nowMidnight.UTC().Format(time.RFC3339)
 	viewEnd := nowMidnight.AddDate(0, 0, 1).UTC().Format(time.RFC3339)
 
-	query := users.ItemCalendarViewRequestBuilderGetQueryParameters{
+	query := users.ItemCalendarviewCalendarViewRequestBuilderGetQueryParameters{
 		StartDateTime: &viewStart,
 		EndDateTime:   &viewEnd,
 		Select:        []string{"subject", "id"},
@@ -49,7 +49,7 @@ func SimpleBatch(graphClient *graph.GraphServiceClient) {
 	eventsRequest, err := graphClient.Me().
 		CalendarView().
 		ToGetRequestInformation(context.Background(),
-			&users.ItemCalendarViewRequestBuilderGetRequestConfiguration{
+			&users.ItemCalendarviewCalendarViewRequestBuilderGetRequestConfiguration{
 				QueryParameters: &query,
 			})
 	if err != nil {
@@ -134,7 +134,7 @@ func DependentBatch(graphClient *graph.GraphServiceClient) {
 	viewStart := nowMidnight.UTC().Format(time.RFC3339)
 	viewEnd := nowMidnight.AddDate(0, 0, 1).UTC().Format(time.RFC3339)
 
-	query := users.ItemCalendarViewRequestBuilderGetQueryParameters{
+	query := users.ItemCalendarviewCalendarViewRequestBuilderGetQueryParameters{
 		StartDateTime: &viewStart,
 		EndDateTime:   &viewEnd,
 		Select:        []string{"subject", "id"},
@@ -145,7 +145,7 @@ func DependentBatch(graphClient *graph.GraphServiceClient) {
 	eventsRequest, err := graphClient.Me().
 		CalendarView().
 		ToGetRequestInformation(context.Background(),
-			&users.ItemCalendarViewRequestBuilderGetRequestConfiguration{
+			&users.ItemCalendarviewCalendarViewRequestBuilderGetRequestConfiguration{
 				QueryParameters: &query,
 			})
 	if err != nil {
