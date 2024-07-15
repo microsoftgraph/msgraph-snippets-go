@@ -9,11 +9,11 @@ require (
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.7.0
 	github.com/jasonjoh/msgraph-sdk-go-debug-logger v0.0.2
 	github.com/joho/godotenv v1.5.1
-	github.com/microsoft/kiota-abstractions-go v1.6.0
+	github.com/microsoft/kiota-abstractions-go v1.6.1
 	github.com/microsoft/kiota-authentication-azure-go v1.0.2
 	github.com/microsoft/kiota-http-go v1.4.1
 	github.com/microsoftgraph/msgraph-sdk-go v1.45.0
-	github.com/microsoftgraph/msgraph-sdk-go-core v1.1.0
+	github.com/microsoftgraph/msgraph-sdk-go-core v1.2.0
 	github.com/thlib/go-timezone-local v0.0.3
 )
 
