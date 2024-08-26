@@ -45,7 +45,8 @@ func main() {
 		fmt.Println("0. Exit")
 		fmt.Println("1. Run batch samples")
 		fmt.Println("2. Run request samples")
-		fmt.Println("3. Run paging samples")
+		fmt.Println("3. Run upload samples")
+		fmt.Println("4. Run paging samples")
 
 		_, err = fmt.Scanf("%d", &choice)
 		if err != nil {
@@ -61,6 +62,9 @@ func main() {
 		case 2:
 			snippets.RunRequestSamples(userClient)
 		case 3:
+			largeFile := os.Getenv("LARGE_FILE_PATH")
+			snippets.RunUploadSamples(userClient, largeFile)
+		case 4:
 			snippets.RunPagingSamples(userClient)
 		default:
 			fmt.Println("Invalid choice! Please try again.")
