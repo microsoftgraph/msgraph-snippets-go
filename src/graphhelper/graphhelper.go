@@ -40,7 +40,7 @@ func NewUserGraphServiceClient(logger *log.Logger) (*graph.GraphServiceClient, e
 		return nil, err
 	}
 
-	authProvider, err := auth.NewAzureIdentityAuthenticationProviderWithScopesAndValidHosts(credential, scopes, []string{"graph.microsoft.com"})
+	authProvider, err := auth.NewAzureIdentityAuthenticationProviderWithScopes(credential, scopes)
 	if err != nil {
 		return nil, err
 	}

@@ -56,16 +56,16 @@ func UploadFileToOneDrive(graphClient *graph.GraphServiceClient, largeFile strin
 
 	// Create a callback that is invoked after each slice is uploaded
 	progress := func(progress int64, total int64) {
-		fmt.Printf("Uploaded %d of %d bytes", progress, total)
+		fmt.Printf("Uploaded %d of %d bytes\n", progress, total)
 	}
 
 	// Upload the file
 	uploadResult := fileUploadTask.Upload(progress)
 
 	if uploadResult.GetUploadSucceeded() {
-		fmt.Printf("Upload complete, item ID: %s", *uploadResult.GetItemResponse().GetId())
+		fmt.Printf("Upload complete, item ID: %s\n", *uploadResult.GetItemResponse().GetId())
 	} else {
-		fmt.Print("Upload failed.")
+		fmt.Print("Upload failed.\n")
 	}
 	// </LargeFileUploadSnippet>
 }
@@ -111,7 +111,7 @@ func UploadAttachmentToMessage(graphClient *graph.GraphServiceClient, largeFile 
 	// Max slice size must be a multiple of 320 KiB
 	maxSliceSize := int64(320 * 1024)
 	fileUploadTask := fileuploader.NewLargeFileUploadTask[models.FileAttachmentable](
-		nil, //graphClient.RequestAdapter,
+		graphClient.RequestAdapter,
 		uploadSession,
 		byteStream,
 		maxSliceSize,
@@ -120,16 +120,16 @@ func UploadAttachmentToMessage(graphClient *graph.GraphServiceClient, largeFile 
 
 	// Create a callback that is invoked after each slice is uploaded
 	progress := func(progress int64, total int64) {
-		fmt.Printf("Uploaded %d of %d bytes", progress, total)
+		fmt.Printf("Uploaded %d of %d bytes\n", progress, total)
 	}
 
 	// Upload the file
 	uploadResult := fileUploadTask.Upload(progress)
 
 	if uploadResult.GetUploadSucceeded() {
-		fmt.Print("Upload complete")
+		fmt.Print("Upload complete\n")
 	} else {
-		fmt.Print("Upload failed.")
+		fmt.Print("Upload failed.\n")
 	}
 	// </UploadAttachmentSnippet>
 }
