@@ -17,7 +17,7 @@ import (
 	"github.com/microsoftgraph/msgraph-sdk-go/users"
 )
 
-// <ImportSnippet>
+// </ImportSnippet>
 
 func RunUploadSamples(graphClient *graph.GraphServiceClient, largeFile string) {
 	itemPath := "Documents/vacation.gif"
