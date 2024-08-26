@@ -3,6 +3,7 @@
 
 package snippets
 
+// <ImportSnippet>
 import (
 	"context"
 	"fmt"
@@ -15,6 +16,8 @@ import (
 	"github.com/microsoftgraph/msgraph-sdk-go/models"
 	"github.com/microsoftgraph/msgraph-sdk-go/users"
 )
+
+// <ImportSnippet>
 
 func RunUploadSamples(graphClient *graph.GraphServiceClient, largeFile string) {
 	itemPath := "Documents/vacation.gif"
