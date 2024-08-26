@@ -13,10 +13,10 @@ import (
 
 	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
 	graphdebug "github.com/jasonjoh/msgraph-sdk-go-debug-logger"
-	auth "github.com/microsoft/kiota-authentication-azure-go"
 	khttp "github.com/microsoft/kiota-http-go"
 	graph "github.com/microsoftgraph/msgraph-sdk-go"
 	graphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
+	auth "github.com/microsoftgraph/msgraph-sdk-go-core/authentication"
 )
 
 func NewUserGraphServiceClient(logger *log.Logger) (*graph.GraphServiceClient, error) {
@@ -40,7 +40,7 @@ func NewUserGraphServiceClient(logger *log.Logger) (*graph.GraphServiceClient, e
 		return nil, err
 	}
 
-	authProvider, err := auth.NewAzureIdentityAuthenticationProviderWithScopes(credential, scopes)
+	authProvider, err := auth.NewAzureIdentityAuthenticationProviderWithScopesAndValidHosts(credential, scopes, []string{"graph.microsoft.com"})
 	if err != nil {
 		return nil, err
 	}

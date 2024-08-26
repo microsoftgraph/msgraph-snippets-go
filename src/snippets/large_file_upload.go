@@ -30,7 +30,7 @@ func UploadFileToOneDrive(graphClient *graph.GraphServiceClient, largeFile strin
 	// Use properties to specify the conflict behavior
 	itemUploadProperties := models.NewDriveItemUploadableProperties()
 	itemUploadProperties.SetAdditionalData(map[string]any{"@microsoft.graph.conflictBehavior": "replace"})
-	uploadSessionRequestBody := drives.NewItemItemsItemCreateuploadsessionCreateUploadSessionPostRequestBody()
+	uploadSessionRequestBody := drives.NewItemItemsItemCreateUploadSessionPostRequestBody()
 	uploadSessionRequestBody.SetItem(itemUploadProperties)
 
 	// Create the upload session
@@ -98,7 +98,7 @@ func UploadAttachmentToMessage(graphClient *graph.GraphServiceClient, largeFile 
 	fileSize := fileInfo.Size()
 	largeAttachment.SetSize(&fileSize)
 
-	uploadSessionRequestBody := users.NewItemMessagesItemAttachmentsCreateuploadsessionCreateUploadSessionPostRequestBody()
+	uploadSessionRequestBody := users.NewItemMessagesItemAttachmentsCreateUploadSessionPostRequestBody()
 	uploadSessionRequestBody.SetAttachmentItem(largeAttachment)
 
 	uploadSession, _ := graphClient.Me().
@@ -111,7 +111,7 @@ func UploadAttachmentToMessage(graphClient *graph.GraphServiceClient, largeFile 
 	// Max slice size must be a multiple of 320 KiB
 	maxSliceSize := int64(320 * 1024)
 	fileUploadTask := fileuploader.NewLargeFileUploadTask[models.FileAttachmentable](
-		graphClient.RequestAdapter,
+		nil, //graphClient.RequestAdapter,
 		uploadSession,
 		byteStream,
 		maxSliceSize,

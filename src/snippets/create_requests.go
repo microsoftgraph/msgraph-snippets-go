@@ -204,12 +204,12 @@ func MakeQueryParametersRequest(graphClient *graph.GraphServiceClient) models.Ev
 	endDateTime := "2023-06-15T00:00:00Z"
 
 	// import github.com/microsoftgraph/msgraph-sdk-go/users
-	query := users.ItemCalendarviewCalendarViewRequestBuilderGetQueryParameters{
+	query := users.ItemCalendarViewRequestBuilderGetQueryParameters{
 		StartDateTime: &startDateTime,
 		EndDateTime:   &endDateTime,
 	}
 
-	options := users.ItemCalendarviewCalendarViewRequestBuilderGetRequestConfiguration{
+	options := users.ItemCalendarViewRequestBuilderGetRequestConfiguration{
 		QueryParameters: &query,
 	}
 
