@@ -10,7 +10,7 @@ require (
 	github.com/jasonjoh/msgraph-sdk-go-debug-logger v0.0.2
 	github.com/joho/godotenv v1.5.1
 	github.com/microsoft/kiota-abstractions-go v1.7.0
-	github.com/microsoft/kiota-http-go v1.4.4
+	github.com/microsoft/kiota-http-go v1.4.5
 	github.com/microsoftgraph/msgraph-sdk-go v1.47.0
 	github.com/microsoftgraph/msgraph-sdk-go-core v1.2.1
 	github.com/thlib/go-timezone-local v0.0.3
