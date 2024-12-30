@@ -13,7 +13,7 @@ require (
 	github.com/microsoft/kiota-http-go v1.4.7
 	github.com/microsoftgraph/msgraph-sdk-go v1.55.0
 	github.com/microsoftgraph/msgraph-sdk-go-core v1.2.1
-	github.com/thlib/go-timezone-local v0.0.4
+	github.com/thlib/go-timezone-local v0.0.6
 )
 
 require (
