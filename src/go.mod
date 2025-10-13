@@ -4,7 +4,7 @@ go 1.23.0
 
 require (
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.19.1
-	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.12.0
+	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.13.0
 	github.com/jasonjoh/msgraph-sdk-go-debug-logger v0.0.2
 	github.com/joho/godotenv v1.5.1
 	github.com/microsoft/kiota-abstractions-go v1.9.3
