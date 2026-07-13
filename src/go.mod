@@ -11,7 +11,7 @@ require (
 	github.com/microsoft/kiota-http-go v1.5.6
 	github.com/microsoftgraph/msgraph-sdk-go v1.99.0
 	github.com/microsoftgraph/msgraph-sdk-go-core v1.4.1
-	github.com/thlib/go-timezone-local v0.0.7
+	github.com/thlib/go-timezone-local v0.0.8
 )
 
 require (
