@@ -7,7 +7,7 @@ require (
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.15.0
 	github.com/jasonjoh/msgraph-sdk-go-debug-logger v0.0.2
 	github.com/joho/godotenv v1.5.1
-	github.com/microsoft/kiota-abstractions-go v1.11.2
+	github.com/microsoft/kiota-abstractions-go v1.11.3
 	github.com/microsoft/kiota-http-go v1.5.9
 	github.com/microsoftgraph/msgraph-sdk-go v1.104.0
 	github.com/microsoftgraph/msgraph-sdk-go-core v1.4.1
