@@ -9,7 +9,7 @@ require (
 	github.com/joho/godotenv v1.5.1
 	github.com/microsoft/kiota-abstractions-go v1.12.1
 	github.com/microsoft/kiota-http-go v1.6.1
-	github.com/microsoftgraph/msgraph-sdk-go v1.105.0
+	github.com/microsoftgraph/msgraph-sdk-go v1.106.0
 	github.com/microsoftgraph/msgraph-sdk-go-core v1.4.1
 	github.com/thlib/go-timezone-local v0.0.9
 )
