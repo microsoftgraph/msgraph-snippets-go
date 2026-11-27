@@ -7,7 +7,7 @@ require (
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.15.0
 	github.com/jasonjoh/msgraph-sdk-go-debug-logger v0.0.2
 	github.com/joho/godotenv v1.5.1
-	github.com/microsoft/kiota-abstractions-go v1.12.1
+	github.com/microsoft/kiota-abstractions-go v1.12.2
 	github.com/microsoft/kiota-http-go v1.6.1
 	github.com/microsoftgraph/msgraph-sdk-go v1.106.0
 	github.com/microsoftgraph/msgraph-sdk-go-core v1.4.1
@@ -29,7 +29,7 @@ require (
 	github.com/microsoft/kiota-serialization-multipart-go v1.1.2 // indirect
 	github.com/microsoft/kiota-serialization-text-go v1.1.3 // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
-	github.com/std-uritemplate/std-uritemplate/go/v2 v2.0.12 // indirect
+	github.com/std-uritemplate/std-uritemplate/go/v2 v2.0.13 // indirect
 	go.opentelemetry.io/auto/sdk v1.2.1 // indirect
 	go.opentelemetry.io/otel v1.47.0 // indirect
 	go.opentelemetry.io/otel/log v1.47.0 // indirect
